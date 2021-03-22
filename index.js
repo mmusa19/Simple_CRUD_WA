@@ -7,6 +7,8 @@ const cookieParser = require("cookie-parser");
 // *************************************** //
 const app = express();
 
+const PORT = 3001;
+
 // *** routes *** //
 const auth = require("./routes/auth");
 const matchReviews = require("./routes/matchReview");
@@ -33,8 +35,6 @@ app.get("/api/get", (req, res) => {
 // init routes
 app.use("/", auth);
 app.use("/api", matchReviews);
-
-const PORT = 8008;
 
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Server start on port ${PORT}`);
