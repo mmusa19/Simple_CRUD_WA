@@ -34,6 +34,8 @@ app.get("/api/get", (req, res) => {
 app.use("/", auth);
 app.use("/api", matchReviews);
 
-app.listen(3001, () => {
-  console.log("Server start on port 3001");
+const PORT = 3001;
+
+app.listen(process.env.PORT || PORT, () => {
+  console.log(`Server start on port ${PORT}`);
 });
