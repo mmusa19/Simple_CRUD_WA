@@ -34,6 +34,8 @@ app.get("/api/get", (req, res) => {
 app.use("/", auth);
 app.use("/api", matchReviews);
 
+const PORT = 8008;
+
 app.listen(process.env.PORT || PORT, () => {
   console.log(`Server start on port ${PORT}`);
 });
