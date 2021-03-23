@@ -1,8 +1,8 @@
 Simple CRUD App (MySQL, Node, React)
 
-**. client-side on branch main 
+** client-side on branch main **
 
-**. server-side on branch server-side
+** server-side on branch server-side **
 
 
 
